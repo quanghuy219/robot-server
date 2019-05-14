@@ -1,4 +1,4 @@
-from flask import session
+from flask import session, request
 from flask_socketio import emit, join_room
 from .. import socketio
 

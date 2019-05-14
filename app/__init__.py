@@ -8,7 +8,7 @@ def create_app(debug=False):
     """Create an application."""
     app = Flask(__name__)
     app.debug = debug
-    app.config['SECRET_KEY'] = 'gjr39dkjn344_!67#'
+    app.config['SECRET_KEY'] = 'daf5c9a8-648b-4e5b-b37e'
 
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
