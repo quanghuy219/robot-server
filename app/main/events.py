@@ -31,6 +31,12 @@ def forward(message):
     socketio.emit('forward')
 
 
+@socketio.on('backward')
+def forward(message):
+    print(message)
+    socketio.emit('backward')
+
+
 @socketio.on('left')
 def left(message):
     socketio.emit('left')
