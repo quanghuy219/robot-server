@@ -1,1 +1,1 @@
-web: gunicorn -k gevent -w 1 run:app
+web: python run.py
