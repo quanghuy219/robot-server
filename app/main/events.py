@@ -57,6 +57,11 @@ def drop(message):
     socketio.emit('drop')
 
 
+@socketio.on('auto')
+def auto_run(message):
+    socketio.emit('auto')
+
+
 @socketio.on('stop')
 def stop(message):
     socketio.emit('stop')
